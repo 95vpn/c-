@@ -10,6 +10,13 @@ Console.WriteLine("El año que viene tendrá " + edad + " años");
 
 int numeroEntero = 5;
 double numeroDecimal = 16.0;
-string texto = "lopju ";
+//string texto = "lopju ";
 char letra = 'A';
 bool aprobado = true;
+
+//concatenacion
+
+string texto1 = "Hola";
+string texto2 = "Mujndo";
+string texto = string.Concat(texto1, " ",    texto2);
+Console.WriteLine(texto[0]);
