@@ -96,6 +96,7 @@ finally
 }
 */
 
+/*
 static void Saludar(string nombre, int edad)
 {
     Console.WriteLine("Te llamas " + nombre + " y tienes " + edad + "años");
@@ -103,3 +104,57 @@ static void Saludar(string nombre, int edad)
 
 string persona = "Juan";
 Saludar(persona, 23);
+Saludar("Pedro", 24);
+*/
+
+/*
+static double Media(double num1, double num2)
+{
+    double resultado = (num1 + num2) / 2;
+    return resultado;
+}
+
+double valorMedio = Media(8.0, 4.0);
+Console.WriteLine(valorMedio);
+*/
+
+/*
+bool valorBooleano = false;
+
+bool valorBooleano1 = 8 > 3;
+Console.WriteLine(valorBooleano1);
+bool valorBooleano2 = 8 > 8;
+Console.WriteLine(valorBooleano2);
+bool valorBooleano3 = 8 == 8;
+Console.WriteLine(valorBooleano3);
+bool valorBooleano4 = 8 != 8;
+Console.WriteLine(valorBooleano4);
+bool valorBooleano5 = (0 != 5) && (8 < 3);
+Console.WriteLine(valorBooleano5);
+bool valorBooleano6 = (0 != 5) || (8 < 3);
+Console.WriteLine(valorBooleano6);
+*/
+
+int num = 10;
+if (num % 2 == 0)
+{
+    Console.WriteLine("eL NUMERO  " + num + " es par");
+}
+else
+{
+    Console.WriteLine("El numero  " + num + " es impar");
+}
+
+int num1 = 11;
+int num2 = 12;
+if (num1 > num2)
+{
+    Console.WriteLine("El numero " + num1  + " es mayor que" + num2);
+} else if (num1 < num2)
+{
+    Console.WriteLine("El numero " + num2 + "ES MAYOR QUE " + num1);
+}
+else
+{
+    Console.WriteLine("Ambos numeros son iguales");
+}
