@@ -135,6 +135,7 @@ bool valorBooleano6 = (0 != 5) || (8 < 3);
 Console.WriteLine(valorBooleano6);
 */
 
+/*
 int num = 10;
 if (num % 2 == 0)
 {
@@ -158,3 +159,112 @@ else
 {
     Console.WriteLine("Ambos numeros son iguales");
 }
+*/
+
+/*
+int mes = 1;
+switch(mes)
+{
+    case 1: Console.WriteLine("El primer mes es enero");
+        break;
+    case 2: Console.WriteLine("El segundo mes es febrerp");
+        break;
+    case 3: Console.WriteLine("El tercer mes es marzo");
+        break;
+    case 4: Console.WriteLine("El cuarto mes es abril");
+        break;
+    case 5: Console.WriteLine("El quinto mes es mayo");
+        break;
+    case 6: Console.WriteLine("El sexto mes es junio");
+        break;
+    case 7: Console.WriteLine("El septimo mes es julio");
+        break;
+    case 8: Console.WriteLine("El octavo mes es agosto");
+        break;
+    case 9: Console.WriteLine("El noveno mes es septiembre");
+        break;
+    case 10: Console.WriteLine("El decimo mes es octubre");
+        break;
+    case 11: Console.WriteLine("El onceavo mes es noviembre");
+        break;
+    case 12: Console.WriteLine("El doceavo mes es diciembre");
+        break;
+    default: Console.WriteLine("Mes incorrecto");
+        break;
+}
+*/
+
+/*
+double num = 10.0;
+while (num >= 0)
+{
+    Console.WriteLine(num);
+    num = num / 2;
+}
+
+double num1 = 0.8;
+do
+{
+    Console.WriteLine(num1);
+    num1 = num1 / 2;
+} while(num1 >= 1);
+*/
+
+/*
+for (int i = 1; i<= 10; i++)
+{
+    Console.WriteLine(i);
+}
+*/
+
+/*
+for (int i = 1; i <= 10; i++)
+{
+    if (i == 5)
+    {
+        break;
+    }
+    Console.WriteLine(i);
+}
+
+for (int i = 1; i <= 10; i++)
+{
+    if (i == 5)
+    {
+        continue;
+    }
+    Console.WriteLine(i);
+}
+*/
+
+/*
+int[] numeros = [8, 2, 6, 11, 16];
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine(numeros[i]);
+}
+*/
+
+/*
+
+int[,] numeros = { { 11, 12, 13 }, { 21, 22, 23 }, { 31, 32, 33 } };
+for (int j = 0; j < 3; j++)
+{
+    for (int i = 0; i < 3; i++)
+    {
+        Console.WriteLine(numeros[j, i]);
+    }
+}
+*/
+
+using c_;
+
+Alumno alumno1 = new Alumno("Juan", 25, 7.2, "Arquitectura");
+
+Alumno alumno2 = new Alumno("Laura", 23, 7.9, "Ingeniería");
+
+
+Console.WriteLine("El alumno " + alumno1.nombre + " cursa el grado en " + alumno2.grado);
+
+Console.WriteLine(alumno1.Aprobado());
+Console.WriteLine(alumno2.Aprobado());
