@@ -257,14 +257,41 @@ for (int j = 0; j < 3; j++)
 }
 */
 
+/*
 using c_;
 
 Alumno alumno1 = new Alumno("Juan", 25, 7.2, "Arquitectura");
-
+Console.WriteLine(Alumno.alumnosTotales);
 Alumno alumno2 = new Alumno("Laura", 23, 7.9, "Ingeniería");
+Console.WriteLine(Alumno.alumnosTotales);
+Alumno alumno3 = new Alumno("Juan", 25, 7.2, "Arquitectura");
+Console.WriteLine(Alumno.alumnosTotales);
+Alumno alumno4 = new Alumno("Laura", 23, 7.9, "Ingeniería");
+Console.WriteLine(Alumno.alumnosTotales);
+
 
 
 Console.WriteLine("El alumno " + alumno1.nombre + " cursa el grado en " + alumno2.grado);
 
 Console.WriteLine(alumno1.Aprobado());
 Console.WriteLine(alumno2.Aprobado());
+Console.WriteLine(Alumno.alumnosTotales);
+Frases.Saludar();
+Frases.Despedida();
+Frases frase1 = new Frases();
+*/
+
+using c_;
+
+Animal animal1 = new Animal();
+Perro perro1 = new Perro();
+
+animal1.Comer();
+animal1.Dormir();
+
+perro1.Comer();
+perro1.Dormir();
+perro1.Ladrar();
+
+animal1.Comer();
+perro1.Comer();

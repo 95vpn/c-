@@ -12,14 +12,16 @@ namespace c_
         public int edad;
         private double nota;
         public string grado;
-    
+        public static int alumnosTotales = 0;
 
-    public Alumno(string Nombre, int Edad, double argNota, string Grado)
+
+        public Alumno(string Nombre, int Edad, double argNota, string Grado)
         {
             nombre = Nombre;
             edad = Edad;
-            nota = argNota;
+            Nota = argNota;
             grado = Grado;
+            alumnosTotales++;
         }
 
         public bool Aprobado()
@@ -36,15 +38,18 @@ namespace c_
         public double Nota
         {
             get { return nota; }
-            set { if (value >= 0 && value <= 10)
+            set
+            {
+                if (value >= 0 && value <= 10)
                 {
                     nota = value;
-                } 
+                }
                 else
                 {
                     nota = -1.0;
                 }
             }
 
-    } 
+        }
+    }
 }
